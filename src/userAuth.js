@@ -121,11 +121,16 @@ class User extends Component {
             }}> Send </button>
           </div>
         </div>
-        <div className='GoogleImg  !important'>
+        <div >
+          <h4>login with :</h4>
+          <a className='GoogleImg  !important' href="http://hilal-lambda-notes.herokuapp.com/google"> <img src={require("./pictures/download.jpg")} width="100px" /></a>
+          <a className='GoogleImg  !important' href="http://hilal-lambda-notes.herokuapp.com/facebook"> <img src={require("./pictures/go.jpg")} width="100px" height="100px" /></a>
+        </div>
 
-          <a href="http://hilal-lambda-notes.herokuapp.com/google"> <img src={require("./pictures/go.jpg")} /></a>
+        <div >
 
         </div>
+
 
       </div>
     )
