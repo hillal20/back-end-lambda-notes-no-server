@@ -2,7 +2,8 @@ import React, { Component } from "react";
 import { fetchingUsersActionCreator } from './FetchingNotes';
 import { connect } from 'react-redux';
 import axios from 'axios';
-import { sendingRegistrationActionCreator } from './FetchingNotes'
+import { sendingRegistrationActionCreator } from './FetchingNotes';
+import { Link } from 'react-router-dom';
 class User extends Component {
 
   constructor(props) {
@@ -35,9 +36,6 @@ class User extends Component {
         this.props.history.push("/app");
 
       })
-
-
-
   }
 
 
@@ -72,6 +70,7 @@ class User extends Component {
 
           <div className="Login">
             <h4> Login</h4>
+
             <div>
               <input className="LoginInput !important"
                 type="text"
@@ -121,6 +120,11 @@ class User extends Component {
               this.setState({ username: '', password: '' })
             }}> Send </button>
           </div>
+        </div>
+        <div className='GoogleImg  !important'>
+
+          <a href="http://hilal-lambda-notes.herokuapp.com/google"> <img src={require("./pictures/go.jpg")} /></a>
+
         </div>
 
       </div>
